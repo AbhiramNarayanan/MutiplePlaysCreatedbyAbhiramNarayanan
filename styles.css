@@ -1,0 +1,67 @@
+/* Reset default browser styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  /* Style the navigation bar */
+  nav ul {
+    list-style-type: none;
+    display: flex;
+    justify-content: space-around;
+    background: linear-gradient(45deg, #FF6B6B, #5563DE);
+    padding: 10px 0;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    border-radius: 10px;
+  }
+  
+  nav ul li {
+    display: inline;
+  }
+  
+  nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    padding: 5px 10px;
+    transition: color 0.3s ease;
+  }
+  
+  nav ul li a:hover {
+    background-color: #fff;
+    color: #5563DE;
+    border-radius: 5px;
+  }
+  
+  /* Style the main content area */
+  main {
+    padding: 20px;
+    margin-top: 40px;
+    overflow-x: hidden;
+  }
+  
+  .video-section {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  
+  .video-section .video {
+    flex: 1 1 calc(33.333% - 10px); /* Adjust as needed */
+    max-width: calc(33.333% - 10px); /* Adjust as needed */
+    margin-bottom: 20px; /* Adjust the margin size as desired */
+  }
+  
+  /* Ensure same height for all videos */
+  .video-section .video iframe {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    
+  }
+  
+  /* Additional styling as per your requirements */
+  
